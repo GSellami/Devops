@@ -1,0 +1,27 @@
+pipeline {
+agent any
+       stages{
+        stage('Clone'){
+             steps{  
+                 git branch: 'BranchGhada', url: 'https://github.com/EmnaFerchichi/DevopsRepos.git'
+             }
+        }
+       
+        stage('MVN CLEAN') {
+            steps {
+                sh 'mvn clean'
+                 
+            }
+        }
+           stage("Build") {
+                 steps {
+sh "mvn compile"
+}}
+
+
+
+
+
+
+   }
+}
