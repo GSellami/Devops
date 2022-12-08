@@ -22,7 +22,7 @@ stage('MVN SONARQUBE') {
            sh "mvn sonar:sonar \
   -Dsonar.projectKey=sonarqube \
   -Dsonar.host.url=http://192.168.1.107:9000 \
-  -Dsonar.login=47a1d6fe459bc36e297ca2f675283cc11d18e62f"
+  -Dsonar.login=2bf45c4fb582ad372c75ce72ee9d4d3c074dc5a1"
   
                  
             }
